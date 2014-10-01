@@ -28,6 +28,8 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         
         //var tBBControler: TabBarController = self.tabBarController as TabBarController
         //self.menuList = ViewController.menuList
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

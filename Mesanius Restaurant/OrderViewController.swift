@@ -28,8 +28,9 @@ class OrderViewController: UIViewController,UITableViewDelegate, UITableViewData
         self.orderTableView.dataSource = self
         self.orderTableView.delegate = self
         
-        //self.orderList = ViewController.getOrderList()
-        
+        var viewController = ViewController.self as UIViewController
+        self.orderList = viewController
+        self.orderList = tBBController.orderList
         orderTableView.reloadData()
     }
     
