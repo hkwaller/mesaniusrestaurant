@@ -14,8 +14,8 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     var menuList:[Dish] = [Dish]()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        
         
     }
     
@@ -25,11 +25,8 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         self.menuTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MenuCell")
         self.menuTableView.dataSource = self
         self.menuTableView.delegate = self
-        
-        //var tBBControler: TabBarController = self.tabBarController as TabBarController
-        //self.menuList = ViewController.menuList
-        
-        
+
+        self.menuTableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

@@ -41,6 +41,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if segue.destinationViewController is MenuViewController {
+            println("Sending menu to Menu View Controller")
+            var menuVC = segue.destinationViewController as MenuViewController
+            menuVC.menuList = self.menuList
+            
+        } else if segue.destinationViewController is OrderViewController {
+            println("Sending orders to Order View Controller")
+            var orderVC = segue.destinationViewController as OrderViewController
+            orderVC.orderList = self.orderList
+        }
+        
+    }
 
 }
 
