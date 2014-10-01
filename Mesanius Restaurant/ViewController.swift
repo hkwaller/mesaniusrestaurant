@@ -35,6 +35,21 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Update orders when returning to main view
+        
+        JSONHelper().fetchOrders { (callback) -> () in
+            self.orderList = callback
+            println("Found \(self.orderList.count) orders: ")
+            for order in self.orderList {
+                println("order id: \(order.orderId) items: \(order.item)")
+            }
+        }
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
