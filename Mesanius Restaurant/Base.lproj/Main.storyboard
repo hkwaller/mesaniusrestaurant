@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Mesanius Restaurant-->
+        <!--Ristorante Mesanius -->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Mesanius_Restaurant" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,7 +24,7 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbD-qz-JH7">
                                 <rect key="frame" x="0.0" y="64" width="600" height="183.5"/>
-                                <color key="backgroundColor" red="0.84694602272727271" green="0.41575895903384974" blue="0.37644795330849901" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78039222955703735" green="0.15686275064945221" blue="0.18823531270027161" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Ny ordre">
                                     <color key="titleColor" red="0.95252727700660478" green="1" blue="0.97655083910672502" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,7 +36,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0S-K8-mrd">
                                 <rect key="frame" x="0.0" y="247" width="600" height="184"/>
-                                <color key="backgroundColor" red="0.81096117424242431" green="0.20144536231694057" blue="0.26170135314361304" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78039222955703735" green="0.15686275064945221" blue="0.18823531270027161" alpha="0.90000000000000002" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Dine ordre">
                                     <color key="titleColor" red="0.95252727699999995" green="1" blue="0.97655083909999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,7 +48,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-Gd-hBh">
                                 <rect key="frame" x="0.0" y="431" width="600" height="183.5"/>
-                                <color key="backgroundColor" red="0.72156862745098038" green="0.0" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78039222955703735" green="0.15686275064945221" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Meny">
                                     <color key="titleColor" red="0.95252727699999995" green="1" blue="0.97655083909999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,7 +77,7 @@
                             <constraint firstItem="JuX-Gd-hBh" firstAttribute="width" secondItem="E0S-K8-mrd" secondAttribute="width" id="zC7-3M-rCM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Mesanius Restaurant" id="uIb-dg-6Ik">
+                    <navigationItem key="navigationItem" title="Ristorante Mesanius " id="uIb-dg-6Ik">
                         <barButtonItem key="backBarButtonItem" title="Tilbake" id="bfQ-4Q-A5M"/>
                     </navigationItem>
                 </viewController>
@@ -144,7 +144,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.72156862749999995" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.76862752437591553" green="0.27058824896812439" blue="0.32549020648002625" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="SmA-HM-r1c" firstAttribute="top" secondItem="2Wy-8F-HmR" secondAttribute="bottom" constant="15" id="04J-Pg-jSx"/>
                             <constraint firstItem="qmm-Xi-GCi" firstAttribute="leading" secondItem="Iwg-AE-2Fm" secondAttribute="leadingMargin" id="0TT-QS-gko"/>
@@ -192,7 +192,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-YW-1gX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.7137255072593689" green="0.094117656350135803" blue="0.16078431904315948" alpha="1" colorSpace="deviceRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="0wm-7s-zzi">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -234,7 +234,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8CK-xH-0w9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.74117648601531982" green="0.17647059261798859" blue="0.23921570181846619" alpha="1" colorSpace="deviceRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="3nu-v6-cSr">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -278,7 +278,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLW-vR-UBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="424"/>
+            <point key="canvasLocation" x="586" y="424"/>
         </scene>
     </scenes>
 </document>
