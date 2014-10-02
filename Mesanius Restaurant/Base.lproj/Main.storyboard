@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="12Z-Cr-fWh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="12Z-Cr-fWh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="183.5"/>
                                 <color key="backgroundColor" red="0.84694602272727271" green="0.41575895903384974" blue="0.37644795330849901" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
-                                <state key="normal" title="Ny order">
+                                <state key="normal" title="Ny ordre">
                                     <color key="titleColor" red="0.95252727700660478" green="1" blue="0.97655083910672502" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="247" width="600" height="184"/>
                                 <color key="backgroundColor" red="0.81096117424242431" green="0.20144536231694057" blue="0.26170135314361304" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
-                                <state key="normal" title="Dine ordrer">
+                                <state key="normal" title="Dine ordre">
                                     <color key="titleColor" red="0.95252727699999995" green="1" blue="0.97655083909999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
