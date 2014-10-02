@@ -12,6 +12,9 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var menuTableView: UITableView!
     var menuList:[Dish] = [Dish]()
+    var index = 0;
+    var desc = ""
+    var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +49,8 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         
         cell.accessoryType = UITableViewCellAccessoryType.DetailButton
         
+        index = indexPath.row
+        
         cell.textLabel?.text = self.menuList[indexPath.row].name
         var subtitileText = String(self.menuList[indexPath.row].price) + " kr"
         cell.detailTextLabel?.text = subtitileText
@@ -66,8 +71,26 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         JSONHelper().fetchDescription(menuList[indexPath.row], completionHandler: { (callback) -> () in
             
             println("Dish object: \(callback.description)")
+            self.desc = callback.description
             
         })
+        
+        self.performSegueWithIdentifier("detailSegue", sender: self)
+
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
+        
+        if segue!.identifier == "detailSegue" {
+            let viewController:DetailViewController = segue!.destinationViewController as DetailViewController
+            let indexPath = menuTableView.indexPathForSelectedRow()
+            var rowData:Int = self.menuList[index].id as Int;
+            
+            viewController.dishId = rowData;
+            viewController.desc = self.menuList[index].description as String
+            viewController.name = self.menuList[index].name as String
+        }
         
     }
 

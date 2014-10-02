@@ -16,6 +16,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Update orders when returning to main view
+        
         JSONHelper().fetchMenu { (callback) -> () in
             self.menuList = callback
             println("Found \(self.menuList.count) dishes in menu: ")
@@ -24,21 +34,6 @@ class ViewController: UIViewController {
                 
             }
         }
-        
-        JSONHelper().fetchOrders { (callback) -> () in
-            self.orderList = callback
-            println("Found \(self.orderList.count) orders: ")
-            for order in self.orderList {
-                println("order id: \(order.orderId) items: \(order.item)")
-            }
-        }
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // Update orders when returning to main view
         
         JSONHelper().fetchOrders { (callback) -> () in
             self.orderList = callback

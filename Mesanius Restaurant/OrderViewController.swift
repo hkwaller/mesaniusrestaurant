@@ -17,8 +17,6 @@ class OrderViewController: UIViewController,UITableViewDelegate, UITableViewData
         
         super.viewDidLoad()
         
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {
