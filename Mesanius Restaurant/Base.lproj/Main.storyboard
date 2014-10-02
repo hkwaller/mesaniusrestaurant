@@ -24,7 +24,7 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbD-qz-JH7">
                                 <rect key="frame" x="0.0" y="64" width="600" height="183.5"/>
-                                <color key="backgroundColor" red="0.72156862749999995" green="0.32228796320016623" blue="0.38465521862287139" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.84694602272727271" green="0.41575895903384974" blue="0.37644795330849901" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Ny order">
                                     <color key="titleColor" red="0.95252727700660478" green="1" blue="0.97655083910672502" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,7 +36,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0S-K8-mrd">
                                 <rect key="frame" x="0.0" y="247" width="600" height="184"/>
-                                <color key="backgroundColor" red="0.72156862749999995" green="0.18248549390887123" blue="0.23502347617566977" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.81096117424242431" green="0.20144536231694057" blue="0.26170135314361304" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Dine ordrer">
                                     <color key="titleColor" red="0.95252727699999995" green="1" blue="0.97655083909999996" alpha="1" colorSpace="calibratedRGB"/>
