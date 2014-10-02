@@ -67,6 +67,7 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
         
         println("Decriptopn for dish nr: \(indexPath.row+1)")
+        self.index = indexPath.row
         
         JSONHelper().fetchDescription(menuList[indexPath.row], completionHandler: { (callback) -> () in
             
@@ -76,20 +77,18 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         })
         
         self.performSegueWithIdentifier("detailSegue", sender: self)
-
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
         
         if segue!.identifier == "detailSegue" {
             let viewController:DetailViewController = segue!.destinationViewController as DetailViewController
-            let indexPath = menuTableView.indexPathForSelectedRow()
-            var rowData:Int = self.menuList[index].id as Int;
             
-            viewController.dishId = rowData;
-            viewController.desc = self.menuList[index].description as String
-            viewController.name = self.menuList[index].name as String
+            let indexPath = menuTableView.indexPathForSelectedRow()
+            
+            viewController.dishId = self.menuList[self.index].id as Int
+            viewController.desc = self.desc
+            viewController.name = self.menuList[self.index].name as String;
         }
         
     }
