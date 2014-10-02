@@ -89,14 +89,11 @@
 		31541D4B19DC346E00F1A90F /* Mesanius Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				31A2DD3019DC3DDB008ABEB9 /* JSONHelper.swift */,
 				31541D4E19DC346E00F1A90F /* AppDelegate.swift */,
-				31541D5019DC346E00F1A90F /* ViewController.swift */,
+				31A2DD3019DC3DDB008ABEB9 /* JSONHelper.swift */,
 				31A2DD3219DC3DE6008ABEB9 /* Dish.swift */,
 				31A2DD3319DC3DE6008ABEB9 /* Order.swift */,
-				31A2DD2C19DC3CFF008ABEB9 /* OrderViewController.swift */,
-				314B76D619DD578700E46299 /* NewOrderViewController.swift */,
-				31A2DD2E19DC3D1D008ABEB9 /* MenuViewController.swift */,
+				AF74887519DDB2CA00D0C3D5 /* ViewControllers */,
 				31541D5219DC346E00F1A90F /* Main.storyboard */,
 				31541D5519DC346E00F1A90F /* Images.xcassets */,
 				31541D5719DC346E00F1A90F /* LaunchScreen.xib */,
@@ -128,6 +125,17 @@
 				31541D6319DC346E00F1A90F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF74887519DDB2CA00D0C3D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31541D5019DC346E00F1A90F /* ViewController.swift */,
+				31A2DD2C19DC3CFF008ABEB9 /* OrderViewController.swift */,
+				314B76D619DD578700E46299 /* NewOrderViewController.swift */,
+				31A2DD2E19DC3D1D008ABEB9 /* MenuViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

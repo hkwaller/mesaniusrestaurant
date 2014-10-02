@@ -10,8 +10,8 @@ import Foundation
 
 class JSONHelper{
     
-     func fetchMenu(completionHandler: (callback: [Dish]) -> ()) {
-    
+    func fetchMenu(completionHandler: (callback: [Dish]) -> ()) {
+        
         var menuList = [Dish]()
         
         let urlPath = "http://localhost:8080/rest/menu/"
@@ -26,14 +26,10 @@ class JSONHelper{
             } else {
                 
                 let jsonResult: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
-                //println(jsonResult)
                 
                 if let dict = jsonResult as? NSArray {
-                    
                     for food : AnyObject in dict {
-                        
                         if let foodInfo = food as? Dictionary<String, AnyObject> {
-                            
                             if let id = foodInfo["id"] as AnyObject? as Int?{
                                 if let name = foodInfo["name"] as AnyObject? as String?{
                                     if let price = foodInfo["price"] as AnyObject? as Int? {
@@ -49,11 +45,8 @@ class JSONHelper{
                 // Send callback with menuList
                 completionHandler(callback: menuList)
             }
-            
         })
-        
         task.resume()
-        
     }
     
     func fetchDescription(dish: Dish ,completionHandler: (callback: Dish) -> ()) {
@@ -64,7 +57,6 @@ class JSONHelper{
         
         var description:String = ""
         
-        
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
             
             if (error != nil) {
@@ -74,26 +66,19 @@ class JSONHelper{
             } else {
                 
                 let jsonResult: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
-                //println(jsonResult)
                 
-               if let foodInfo = jsonResult as? Dictionary<String, AnyObject> {
-                    
+                if let foodInfo = jsonResult as? Dictionary<String, AnyObject> {
                     if let desc = foodInfo["description"] as AnyObject? as String?{
                         description = desc
                         dish.description = description
                     }
-                   
                 }
-                // Send callback with menuList
+                // Send callback with description added to dish
                 completionHandler(callback: dish)
-                
             }
-            
         })
         
         task.resume()
-    
-    
     }
     
     func fetchOrders(completionHandler: (callback: [Order]) -> ()) {
@@ -113,7 +98,6 @@ class JSONHelper{
                 
                 let jsonResult: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
                 if let dict = jsonResult as? NSArray {
-                    
                     for order : AnyObject in dict {
                         if let orderInfo = order as? Dictionary<String, AnyObject> {
                             if let orderId = orderInfo["orderId"] as AnyObject? as Int?{
@@ -128,14 +112,10 @@ class JSONHelper{
                 }
                 //Sort list with ascending id's
                 orderList.sort({$0.orderId < $1.orderId})
-                // Send callback with menuList
+                // Send callback with orderlist
                 completionHandler(callback: orderList)
             }
-            
         })
-        
         task.resume()
-        
     }
-
 }

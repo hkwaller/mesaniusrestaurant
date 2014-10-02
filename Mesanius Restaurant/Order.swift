@@ -15,7 +15,6 @@ class Order {
     var itemId: Int
     var quantity: Int
     
-    
     init(orderId: Int, itemId: Int, quantity: Int){
         
         self.orderId = orderId

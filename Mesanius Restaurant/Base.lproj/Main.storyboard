@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Mesanius Restaurant-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Mesanius_Restaurant" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HW1-Sf-JBM">
@@ -23,7 +23,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbD-qz-JH7">
-                                <rect key="frame" x="0.0" y="64" width="320" height="173"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="183.5"/>
                                 <color key="backgroundColor" red="0.62279115563499032" green="0.71565930327171057" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Ny order">
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0S-K8-mrd">
-                                <rect key="frame" x="0.0" y="237" width="320" height="173"/>
+                                <rect key="frame" x="0.0" y="247" width="600" height="184"/>
                                 <color key="backgroundColor" red="0.36551946353888942" green="0.59503111128140773" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Dine ordrer">
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-Gd-hBh">
-                                <rect key="frame" x="0.0" y="410" width="320" height="173"/>
+                                <rect key="frame" x="0.0" y="431" width="600" height="183.5"/>
                                 <color key="backgroundColor" red="0.205949417431046" green="0.47017813689583854" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="Meny">
@@ -77,12 +77,13 @@
                             <constraint firstItem="JuX-Gd-hBh" firstAttribute="width" secondItem="E0S-K8-mrd" secondAttribute="width" id="zC7-3M-rCM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uIb-dg-6Ik"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationItem key="navigationItem" title="Mesanius Restaurant" id="uIb-dg-6Ik">
+                        <barButtonItem key="backBarButtonItem" title="Tilbake" id="bfQ-4Q-A5M"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="440"/>
+            <point key="canvasLocation" x="1258" y="424"/>
         </scene>
         <!--Ny ordre-->
         <scene sceneID="Fxa-LQ-ISC">
@@ -114,20 +115,8 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ST7-XC-64z">
                                 <rect key="frame" x="16" y="353" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Wy-8F-HmR">
-                                <rect key="frame" x="0.0" y="114" width="320" height="194.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="qHp-zN-vQU">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qHp-zN-vQU" id="oYz-q7-LMU">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-dQ-CJs">
                                 <rect key="frame" x="16" y="456" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.96390660781077264" green="1" blue="0.96998141678950234" alpha="1" colorSpace="calibratedRGB"/>
@@ -142,6 +131,18 @@
                                     <action selector="placeOrder:" destination="yZF-rz-zPM" eventType="touchUpInside" id="tVe-23-odc"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Wy-8F-HmR">
+                                <rect key="frame" x="16" y="114" width="288" height="194.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="qHp-zN-vQU">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qHp-zN-vQU" id="oYz-q7-LMU">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.62279115559999998" green="0.71565930330000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -149,9 +150,9 @@
                             <constraint firstItem="qmm-Xi-GCi" firstAttribute="leading" secondItem="Iwg-AE-2Fm" secondAttribute="leadingMargin" id="0TT-QS-gko"/>
                             <constraint firstItem="EpB-dQ-CJs" firstAttribute="top" secondItem="ST7-XC-64z" secondAttribute="bottom" constant="73" id="0qJ-9f-j9E"/>
                             <constraint firstItem="xjA-Tj-c3S" firstAttribute="top" secondItem="EpB-dQ-CJs" secondAttribute="bottom" constant="82" id="5tV-Bv-qYA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Wy-8F-HmR" secondAttribute="trailing" constant="-16" id="6Tw-yd-tMz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Wy-8F-HmR" secondAttribute="trailing" id="6Tw-yd-tMz"/>
                             <constraint firstItem="ST7-XC-64z" firstAttribute="top" secondItem="SmA-HM-r1c" secondAttribute="bottom" constant="8" id="9dn-qY-KsS"/>
-                            <constraint firstItem="2Wy-8F-HmR" firstAttribute="leading" secondItem="Iwg-AE-2Fm" secondAttribute="leadingMargin" constant="-16" id="C8o-eO-G4i"/>
+                            <constraint firstItem="2Wy-8F-HmR" firstAttribute="leading" secondItem="Iwg-AE-2Fm" secondAttribute="leadingMargin" id="C8o-eO-G4i"/>
                             <constraint firstItem="SmA-HM-r1c" firstAttribute="leading" secondItem="EpB-dQ-CJs" secondAttribute="leading" id="FpP-i8-7ny"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qmm-Xi-GCi" secondAttribute="trailing" constant="202" id="LNH-bT-1DX"/>
                             <constraint firstItem="2Wy-8F-HmR" firstAttribute="top" secondItem="qmm-Xi-GCi" secondAttribute="bottom" constant="8" id="Rca-zK-5BW"/>
@@ -175,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SN6-HM-CUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982" y="531"/>
+            <point key="canvasLocation" x="1748" y="-269"/>
         </scene>
         <!--Meny-->
         <scene sceneID="jBk-ga-nMk">
@@ -217,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAN-0r-E8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569" y="1286"/>
+            <point key="canvasLocation" x="1748" y="1138"/>
         </scene>
         <!--Dine ordrer-->
         <scene sceneID="zRy-ha-n0U">
@@ -259,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ca0-id-9dJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2326" y="1024"/>
+            <point key="canvasLocation" x="1748" y="424"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fTh-Kj-8gq">
@@ -277,7 +278,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLW-vR-UBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="440"/>
+            <point key="canvasLocation" x="694" y="424"/>
         </scene>
     </scenes>
 </document>
