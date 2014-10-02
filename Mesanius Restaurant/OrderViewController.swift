@@ -12,6 +12,7 @@ class OrderViewController: UIViewController,UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var orderTableView: UITableView!
     var orderList:[Order] = [Order]()
+    var menuList:[Dish] = [Dish]()
     
     override func viewDidLoad() {
         
@@ -44,12 +45,27 @@ class OrderViewController: UIViewController,UITableViewDelegate, UITableViewData
         
         var cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "MenuCell") as UITableViewCell
         
-        cell.accessoryType = UITableViewCellAccessoryType.DetailButton
+        //cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
         println(self.orderList[indexPath.row]);
         //var label:String = self.orderList[indexPath.row].orderId
         //cell.textLabel?.text = self.orderList[indexPath.row].orderId
-        var subtitileText = String(self.orderList[indexPath.row].item.count) + " retter"
-        cell.detailTextLabel?.text = subtitileText
+        var foodId = self.orderList[indexPath.row].item[0]
+        var display:String = "\(self.orderList[indexPath.row].item[1]) st "
+        var cost = 0
+        
+        for food in menuList {
+            if food.id == foodId {
+                display += food.name
+                cost = food.price
+            }
+        }
+        
+        display += " á \(cost) kr - totalt \(cost * self.orderList[indexPath.row].item[1]) kr"
+        
+        cell.detailTextLabel?.text = display
+        
+        //cell.detailTextLabel?.text = subtitileText
         
         return cell
         
