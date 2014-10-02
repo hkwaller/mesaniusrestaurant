@@ -19,5 +19,79 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mesanius Restaurant/NewOrderViewController.swift"
+            timestampString = "433937105.147891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "NewOrderViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mesanius_Restaurant.NewOrderViewController.__deallocating_deinit"
+                  moduleName = "Mesanius Restaurant"
+                  urlString = "file:///Users/hkwaller/Documents/iOS/mesaniusrestaurant/Mesanius%20Restaurant/NewOrderViewController.swift"
+                  timestampString = "433937105.166061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Mesanius_Restaurant.NewOrderViewController.__ivar_destroyer"
+                  moduleName = "Mesanius Restaurant"
+                  urlString = "file:///Users/hkwaller/Documents/iOS/mesaniusrestaurant/Mesanius%20Restaurant/NewOrderViewController.swift"
+                  timestampString = "433937105.167425"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mesanius_Restaurant.NewOrderViewController.init (Mesanius_Restaurant.NewOrderViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Mesanius_Restaurant.NewOrderViewController"
+                  moduleName = "Mesanius Restaurant"
+                  urlString = "file:///Users/hkwaller/Documents/iOS/mesaniusrestaurant/Mesanius%20Restaurant/NewOrderViewController.swift"
+                  timestampString = "433937105.167585"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mesanius_Restaurant.NewOrderViewController.init (Mesanius_Restaurant.NewOrderViewController.Type)() -&gt; Mesanius_Restaurant.NewOrderViewController"
+                  moduleName = "Mesanius Restaurant"
+                  urlString = "file:///Users/hkwaller/Documents/iOS/mesaniusrestaurant/Mesanius%20Restaurant/NewOrderViewController.swift"
+                  timestampString = "433937105.167717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

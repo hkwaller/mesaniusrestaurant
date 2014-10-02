@@ -63,7 +63,12 @@ class ViewController: UIViewController {
             println("Sending orders to Order View Controller")
             var orderVC = segue.destinationViewController as OrderViewController
             orderVC.orderList = self.orderList
+        } else if segue.destinationViewController is NewOrderViewController {
+            println("Sending menu to New Order Controller")
+            var neworderVc = segue.destinationViewController as NewOrderViewController
+            neworderVc.menuList = self.menuList
         }
+        
         
     }
 
