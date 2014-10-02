@@ -34,9 +34,23 @@ class NewOrderViewController: UIViewController,UITableViewDelegate, UITableViewD
     }
     
     @IBAction func placeOrder(sender: AnyObject) {
-        var amount = amountField.text.toInt()
-        println("sender: \(newOrderId) \(newOrderName) \(newOrderPrice) och jag vill ha \(amount)")
+        
         // TODO: Send data to REST
+        
+        // Temp mockup
+        var amount = amountField.text.toInt()
+        UIAlertView(title: "Ny ordre lagt til", message: "\(amount!)x \(newOrderName).\nTotal sum: \(newOrderPrice*amount!)kr", delegate: self, cancelButtonTitle: "OK").show()
+    }
+    
+    func alertView(alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int) {
+        
+        if buttonIndex == 0 {
+            
+            self.navigationController?.popToRootViewControllerAnimated(true)
+            self.newOrderId = 0
+            self.newOrderName = ""
+            self.newOrderPrice = 0
+        }
     }
     
     override func didReceiveMemoryWarning() {
