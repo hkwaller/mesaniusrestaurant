@@ -27,7 +27,10 @@ class ViewController: UIViewController {
         // Update orders when returning to main view
         
         JSONHelper().fetchMenu { (callback) -> () in
-            self.menuList = callback
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.menuList = callback
+            })
+            
             println("Found \(self.menuList.count) dishes in menu: ")
             for dish in self.menuList {
                 println("dish id: \(dish.id) name: \(dish.name) price: \(dish.price)")
@@ -36,7 +39,9 @@ class ViewController: UIViewController {
         }
         
         JSONHelper().fetchOrders { (callback) -> () in
-            self.orderList = callback
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.orderList = callback
+            })
             println("Found \(self.orderList.count) orders: ")
             for order in self.orderList {
                 println("order id: \(order.orderId) items: \(order.item)")

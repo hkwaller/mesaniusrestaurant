@@ -70,27 +70,14 @@ class MenuViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         self.index = indexPath.row
         
         JSONHelper().fetchDescription(menuList[indexPath.row], completionHandler: { (callback) -> () in
-            
-            println("Dish object: \(callback.description)")
-            self.desc = callback.description
-            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                println("Dish object: \(callback.description)")
+                self.desc = callback.description
+                
+                UIAlertView(title: "Beskrivelse", message: "\(callback.description)", delegate: self, cancelButtonTitle: "Ok").show()
+                })
+
         })
         
-        self.performSegueWithIdentifier("detailSegue", sender: self)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-        
-        if segue!.identifier == "detailSegue" {
-            let viewController:DetailViewController = segue!.destinationViewController as DetailViewController
-            
-            let indexPath = menuTableView.indexPathForSelectedRow()
-            
-            viewController.dishId = self.menuList[self.index].id as Int
-            viewController.desc = self.desc
-            viewController.name = self.menuList[self.index].name as String;
-        }
-        
-    }
-
 }

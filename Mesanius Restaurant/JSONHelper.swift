@@ -86,6 +86,7 @@ class JSONHelper{
                 }
                 // Send callback with menuList
                 completionHandler(callback: dish)
+                
             }
             
         })
