@@ -24,7 +24,8 @@ class NewOrderViewController: UIViewController,UITableViewDelegate, UITableViewD
     var newOrderId:Int = 0
     var newOrderName:String = ""
     var newOrderPrice:Int = 0
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -58,15 +59,35 @@ class NewOrderViewController: UIViewController,UITableViewDelegate, UITableViewD
         //var subtitileText = String(self.menuList[indexPath.row].price) + " kr"
         //cell.detailTextLabel?.text = subtitileText
         
+        cell.tag = 0
+        cell.accessoryType = UITableViewCellAccessoryType.None
+
+
         return cell
         
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("MenuCell", forIndexPath: indexPath) as UITableViewCell
+        
+        cell.textLabel?.text = self.menuList[indexPath.row].name
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        
         self.newOrderName = self.menuList[indexPath.row].name
         self.newOrderId = self.menuList[indexPath.row].id
         self.newOrderPrice = self.menuList[indexPath.row].price
         
+        if cell.tag == 0 {
+            cell.tag = 1
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            println("tag: \(cell.tag)")
+        } else if cell.tag == 1 {
+            cell.tag = 0
+            cell.accessoryType = UITableViewCellAccessoryType.None
+            println("tag: \(cell.tag)")
+        }
+
     }
     
     

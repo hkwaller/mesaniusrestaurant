@@ -64,6 +64,7 @@ class JSONHelper{
         
         var description:String = ""
         
+        
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
             
             if (error != nil) {
