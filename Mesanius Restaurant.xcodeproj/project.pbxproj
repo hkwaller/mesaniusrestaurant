@@ -19,7 +19,7 @@
 		31A2DD3119DC3DDB008ABEB9 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A2DD3019DC3DDB008ABEB9 /* JSONHelper.swift */; };
 		31A2DD3419DC3DE6008ABEB9 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A2DD3219DC3DE6008ABEB9 /* Dish.swift */; };
 		31A2DD3519DC3DE6008ABEB9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A2DD3319DC3DE6008ABEB9 /* Order.swift */; };
-		AF04655B19DE01FC00272579 /* logo square 1920x1920.png in Resources */ = {isa = PBXBuildFile; fileRef = AF04655A19DE01FC00272579 /* logo square 1920x1920.png */; };
+		AF04655B19DE01FC00272579 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = AF04655A19DE01FC00272579 /* splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		31A2DD3019DC3DDB008ABEB9 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		31A2DD3219DC3DE6008ABEB9 /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		31A2DD3319DC3DE6008ABEB9 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		AF04655A19DE01FC00272579 /* logo square 1920x1920.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo square 1920x1920.png"; sourceTree = "<group>"; };
+		AF04655A19DE01FC00272579 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				31A2DD3319DC3DE6008ABEB9 /* Order.swift */,
 				AF74887519DDB2CA00D0C3D5 /* ViewControllers */,
 				31541D5219DC346E00F1A90F /* Main.storyboard */,
-				AF04655A19DE01FC00272579 /* logo square 1920x1920.png */,
+				AF04655A19DE01FC00272579 /* splash.png */,
 				31541D5519DC346E00F1A90F /* Images.xcassets */,
 				31541D5719DC346E00F1A90F /* LaunchScreen.xib */,
 				31541D4C19DC346E00F1A90F /* Supporting Files */,
@@ -224,7 +224,7 @@
 			files = (
 				31541D5419DC346E00F1A90F /* Main.storyboard in Resources */,
 				31541D5919DC346E00F1A90F /* LaunchScreen.xib in Resources */,
-				AF04655B19DE01FC00272579 /* logo square 1920x1920.png in Resources */,
+				AF04655B19DE01FC00272579 /* splash.png in Resources */,
 				31541D5619DC346E00F1A90F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
