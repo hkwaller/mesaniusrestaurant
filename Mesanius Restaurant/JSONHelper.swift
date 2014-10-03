@@ -2,7 +2,7 @@
 //  JSONHelper.swift
 //  Mesanius
 //
-//  Created by Henrik Holmsen on 29.09.14.
+//  Created by Hannes Waller on 2014-10-01.
 //  Copyright (c) 2014 Hannes Waller. All rights reserved.
 //
 
@@ -42,6 +42,7 @@ class JSONHelper{
                 }
                 //Sort list with ascending id's
                 menuList.sort({$0.id < $1.id})
+                
                 // Send callback with menuList
                 completionHandler(callback: menuList)
             }
@@ -110,12 +111,12 @@ class JSONHelper{
                         }
                     }
                 }
-                //Sort list with ascending id's
+                
                 orderList.sort({$0.orderId < $1.orderId})
-                // Send callback with orderlist
                 completionHandler(callback: orderList)
             }
         })
+        
         task.resume()
     }
 }

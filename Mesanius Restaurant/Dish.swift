@@ -2,7 +2,7 @@
 //  Dish.swift
 //  Mesanius
 //
-//  Created by Henrik Holmsen on 29.09.14.
+//  Created by Hannes Waller on 2014-10-01.
 //  Copyright (c) 2014 Hannes Waller. All rights reserved.
 //
 

@@ -30,7 +30,6 @@ class OrderViewController: UIViewController,UITableViewDelegate, UITableViewData
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -41,7 +40,6 @@ class OrderViewController: UIViewController,UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "MenuCell") as UITableViewCell
-        println(self.orderList[indexPath.row]);
         
         var foodId = self.orderList[indexPath.row].item[0]
         var display:String = "\(self.orderList[indexPath.row].item[1]) st "
